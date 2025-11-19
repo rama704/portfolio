@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="هنا ضع وصف موقعك">
+    <meta name="keywords" content="كلمة1, كلمة2, كلمة3">
+    <meta name="author" content="اسمك">
+    <meta name="copyright" content="حقوق النشر © 2025">
+    <meta name="robots" content="index, follow">
     <title>Rama Mohammad - Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="portfolio">portfolio</div>
+        <div class="portfolio"><span> R</span>A<span>M</span>A</div>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="mobile-menu-btn">☰</label>
         <nav>
@@ -30,7 +40,8 @@
             <div class="home-text">
                 <h1>Rama Mohammad</h1>
                 <p>Computer Science Graduate | Full Stack Developer</p>
-                <a href="RamaCV101[1] 3.pdf" download class="download-cv">Download CV</a>
+                <a href="cv33.pdf" download class="download-cv" target="_blank">Download CV</a>
+
             </div>
             <div class="home-image">
                 <div class="image-container">
@@ -51,7 +62,8 @@
         </div>
         <div class="education-content">
             <div class="education-item">
-                <h3>Bachelor of Computer Science</h3>
+                <h3>Bachelor of Computer Science  <img src="logo.png" alt="University Logo">
+</h3>
                 <div class="year">2021 - 2025</div>
                 <p>
                     Graduated from Mutah University with a Bachelor's degree in Computer Science in 2025. During my studies, I acquired extensive knowledge in various programming fields, software development, database design, and software engineering. 
@@ -62,7 +74,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section">
+    <section id="experience" class="section1">
         <div class="section-title">
             <p>My Professional Journey</p>
             <h2>Experience</h2>
@@ -72,7 +84,7 @@
                 <h3>Orange Jordan</h3>
                 <div class="duration">Currently Training</div>
                 <div class="tech">
-                    <strong>Technologies:</strong> Laravel, PHP<br><br>
+                    <strong>Technologies:</strong><i class="fa-brands fa-laravel"></i><br><br>
                     Currently training at Orange Jordan, working on developing web applications using Laravel and PHP, gaining practical experience in a professional environment with real-world projects and industry best practices.
                 </div>
             </div>
@@ -81,7 +93,8 @@
                 <h3>Codegy</h3>
                 <div class="duration">Currently Training</div>
                 <div class="tech">
-                    <strong>Technologies:</strong> ASP.NET, C#<br><br>
+                    <strong>Technologies:</strong><i class="devicon-dotnetcore-plain colored" style="font-size: 24px;"></i>
+<br><br>
                     Training at Codegy to work on application development using ASP.NET and C#, learning modern Microsoft technologies and .NET framework for building robust enterprise applications.
                 </div>
             </div>
@@ -90,7 +103,7 @@
                 <h3>Oh Tech Solution</h3>
                 <div class="duration">2 Months Training</div>
                 <div class="tech">
-                    <strong>Technologies:</strong> Laravel, PHP<br><br>
+                    <strong>Technologies:</strong> <i class="fa-brands fa-laravel"></i><br><br>
                     Completed a 2-month training at Oh Tech Solution where I worked on Laravel and PHP project.
                 </div>
             </div>
@@ -140,27 +153,35 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="section-title">
-            <p>What I've Built</p>
-            <h2>Projects</h2>
-        </div>
-        <div class="projects-container">
+    <section id="projects" class="section2">
+
+    <div class="section-title">
+        <p>What I've Built</p>
+        <h2>Projects</h2>
+    </div>
+
+    <div class="projects-wrapper">
+
+        <div class="projects-container layer">
             <div class="project-card">
                 <h3>Graduation Project: Info Green</h3>
-                <p>
-                    InfoGreen is a project designed to solve a common challenge faced by university students—especially first-year students—who struggle to choose the right courses due to limited or inaccurate information. The system provides a reliable platform that helps students select appropriate courses based on prerequisite relationships and their academic study plan.
-
-The website was developed using Laravel (MVC Architecture) within a LAMP stack, utilizing Laragon as the local server and HeidiSQL for database management.
-The project includes a well-structured front-end, an efficient database, and complete CRUD operations (Create, Read, Update, Delete) handled through the backend.
-
-The project successfully achieved its objective by creating a system capable of managing data and assisting students in course selection. It also has strong potential for future expansion, such as integrating it with the university registration system to become a fully functional platform for students.
-                </p>
-<a href="infogreen presentation.pdf" download class="download-btn">
-  Download Project PowerPoint
-</a>            </div>
+                <div class="cardimg"><img src="infogreen.png"></div>
+                <p>InfoGreen is a web-based system ...</p>
+                <a href="infogreen presentation.pdf" download class="download-btn">Download Project PowerPoint</a>
+            </div>
         </div>
-    </section>
+
+        <div class="projects-container layer">
+            <div class="project-card">
+                <h3>UI/UX project: Petopia</h3>
+                <div class="cardimg"><img src="petopia.png"></div>
+                <p>Petopia is an application designed ...</p>
+                <a href="https://www.figma.com/design/9t7F06Z6sshsRDg7ffZInw/Petopia-Project?node-id=0-1&t=qEg91NfWLmolHk3k-1" class="download-btn">View Petopia Project</a>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
@@ -168,22 +189,26 @@ The project successfully achieved its objective by creating a system capable of 
             <p>Get In Touch</p>
             <h2>Contact Me</h2>
         </div>
+        <div class="container">
+<div class="contactimg"><img src="black.jpeg" alt="Contact Image">    </div>
+
         <div class="contact-form">
             <form>
                 <div class="form-group">
                     <label>Name</label>
-                    <input type="text" >
+                    <input type="text" placeholder="your name" >
                 </div>
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" >
+                    <input type="email" placeholder="your email">
                 </div>
                 <div class="form-group">
                     <label>Message</label>
-                    <textarea></textarea>
+                    <textarea placeholder="write here..."></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
+        </div>
         </div>
     </section>
 
@@ -191,6 +216,9 @@ The project successfully achieved its objective by creating a system capable of 
     <footer>
         <p>mobile number:0792557815</p>
         <p>email:rama.masarweh.jo@gmail.com</p>
+        <a href="https://www.linkedin.com/in/rama-masarweh-92549034a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/0792557815" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
     </footer>
 </body>
 </html>
